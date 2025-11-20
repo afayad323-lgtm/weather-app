@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+}
+
+button{
+    background: #4facfe;
+    border: none;
+    width: 70px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background: #2196f3;
+}
+
+#result img {
+    width: 80px;
+    margin: 10px 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#result.show img {
+    transform: translateY(0);
+    opacity: 1;
+}
+#result {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#result.show {
+    opacity: 1;
+}
+
+body.dark {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark .card {
+    background: #333;
+    color: white;
+}
+
+body.dark input {
+    background: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark button {
+    background: #555;
+}
+
+#themeBtn {
+       padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ff9800;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 117px;
+    height: 56px;
+    margin: 20px;
+}
+
+#themeBtn:hover {
+    background: #e68900;
+}
+
+@media (max-width:768px){
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+    .card{
+    width: 90%;        
+    max-width: 350px;  
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    };
+    input, button {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+};
+#themeBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#themeBtn:hover {
+    background: #e68900;
+}
+}
